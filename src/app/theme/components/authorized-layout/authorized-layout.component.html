@@ -1,7 +1,9 @@
 <app-header>
   <app-navigation-menu></app-navigation-menu>
 </app-header>
-<div class="layout__container container mx-auto px-4">
-  <ng-content></ng-content>
-</div>
-<app-footer></app-footer>
+<app-scrollbar class="main-scrollbar__container">
+  <div class="layout__container container mx-auto px-4">
+    <ng-content></ng-content>
+  </div>
+  <app-footer></app-footer>
+</app-scrollbar>

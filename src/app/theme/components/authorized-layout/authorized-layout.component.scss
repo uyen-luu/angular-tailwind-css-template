@@ -1,0 +1,5 @@
+::ng-deep app-scrollbar.main-scrollbar__container {
+  .scrollbar__container {
+    max-height: calc(100vh - 64px);
+  }
+}

@@ -11,6 +11,7 @@ import {
   NotificationButtonComponent,
   LogoComponent,
   MenuToggleButtonComponent,
+  ScrollbarComponent,
 } from '@app/theme/components';
 
 const UI_MODULES = [FontAwesomeModule];
@@ -29,7 +30,8 @@ const COMPONENTS = [
   ProfileButtonComponent,
   NotificationButtonComponent,
   LogoComponent,
-  MenuToggleButtonComponent
+  MenuToggleButtonComponent,
+  ScrollbarComponent
 ];
 const DIRECTIVES: any[] = [];
 //

@@ -7,3 +7,4 @@ export *  from './profile-button/profile-button.component';
 export * from './notification-button/notification-button.component';
 export * from './logo/logo.component';
 export * from './menu-toggle-button/menu-toggle-button.component';
+export * from './scrollbar/scrollbar.component';

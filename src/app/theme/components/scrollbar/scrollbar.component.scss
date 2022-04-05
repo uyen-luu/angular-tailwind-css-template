@@ -1,0 +1,21 @@
+::ng-deep app-scrollbar {
+  .scrollbar__container::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scrollbar__container::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: transparent;
+  }
+
+  .scrollbar__container::-webkit-scrollbar-thumb {
+    background: #1f2937;
+    border-radius: 100vh;
+    border: 3px solid #f6f7ed;
+  }
+
+  .scrollbar__container::-webkit-scrollbar-thumb:hover {
+    background: #111827;
+  }
+}
