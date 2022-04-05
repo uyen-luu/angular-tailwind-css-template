@@ -8,6 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class NavigationMenuComponent implements OnInit {
   @Input() isMobile = false;
   showMenu = false;
+  menuItems = [
+    { path: '/dashboard', name: 'Dashboard' },
+    { path: '/team', name: 'Team' },
+    { path: '/project', name: 'Projects' },
+    { path: '/calendar', name: 'Calendar' },
+  ];
   constructor() {}
 
   ngOnInit(): void {}

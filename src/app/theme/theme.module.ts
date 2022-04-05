@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -16,7 +17,7 @@ import {
 // External UI frames
 const UI_MODULES: any[] = [];
 //
-const BASE_MODULES = [CommonModule];
+const BASE_MODULES = [CommonModule, RouterModule];
 
 // Own components of the theme, shouldn't contains any business logic
 // If you're going to to define any objects which contains business logic, it should be defined in shared module.

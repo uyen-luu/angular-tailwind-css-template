@@ -8,6 +8,18 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
   },
+  {
+    path: 'team',
+    loadChildren: () => import('@app/modules/team/team.module').then(m => m.TeamModule),
+  },
+  {
+    path: 'project',
+    loadChildren: () => import('@app/modules/project/project.module').then(m => m.ProjectModule),
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('@app/modules/calendar/calendar.module').then(m => m.CalendarModule),
+  },
 ];
 
 @NgModule({
