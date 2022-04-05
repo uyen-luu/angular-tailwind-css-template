@@ -1,9 +1,10 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { ThemeModule } from '@app/theme/theme.module';
+import { DashboardComponent } from '@app/shared/components';
 
 const PROVIDERS: any[] = [];
 
-const COMPONENTS: any[] = [];
+const COMPONENTS = [DashboardComponent];
 
 @NgModule({
   imports: [ThemeModule],
