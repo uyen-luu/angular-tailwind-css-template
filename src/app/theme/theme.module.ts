@@ -11,7 +11,7 @@ import {
   NotificationButtonComponent,
   LogoComponent,
   MenuToggleButtonComponent,
-} from './components';
+} from '@app/theme/components';
 
 const UI_MODULES = [FontAwesomeModule];
 //

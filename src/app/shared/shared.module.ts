@@ -1,15 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SharedComponent } from './shared.component';
+import { ModuleWithProviders, NgModule } from '@angular/core';
+import { ThemeModule } from '@app/theme/theme.module';
 
+const PROVIDERS: any[] = [];
 
+const COMPONENTS: any[] = [];
 
 @NgModule({
-  declarations: [
-    SharedComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  imports: [ThemeModule],
+  declarations: [...COMPONENTS],
+  exports: [...COMPONENTS],
 })
-export class SharedModule { }
+export class SharedModule {
+  static forRoot(): ModuleWithProviders<SharedModule> {
+    return {
+      ngModule: SharedModule,
+      providers: [...PROVIDERS],
+    } as ModuleWithProviders<SharedModule>;
+  }
+}
