@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@use "assets/styles/variables";
+@use "assets/styles/palette" as palette;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
