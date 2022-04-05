@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {
   FooterComponent,
   HeaderComponent,
@@ -14,11 +13,13 @@ import {
   ScrollbarComponent,
 } from '@app/theme/components';
 
-const UI_MODULES = [FontAwesomeModule];
+// External UI frames
+const UI_MODULES: any[] = [];
 //
 const BASE_MODULES = [CommonModule];
 
-// Components for this module only
+// Own components of the theme, shouldn't contains any business logic
+// If you're going to to define any objects which contains business logic, it should be defined in shared module.
 const COMPONENTS = [
   FooterComponent,
   HeaderComponent,
